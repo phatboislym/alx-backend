@@ -7,3 +7,6 @@
 - [2. LIFO Caching](2-lifo_cache.py)
 - [3. LRU Caching](3-lru_cache.py)
 - [4. MRU Caching](4-mru_cache.py)
+
+## Advanced Task
+- [5. LFU Caching](100-lfu_cache.py)
