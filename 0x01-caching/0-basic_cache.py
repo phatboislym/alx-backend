@@ -4,7 +4,7 @@ module for class `BasicCache` that inherits from BaseCaching
 BasicCache is a caching system without a limit
 """
 
-BaseCaching = __import__("base_caching").BaseCaching
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
