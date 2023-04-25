@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 """
-module for a basic Flask app which contains a single / route
+module for a basic Flask app
+contains a single / route
 """
 
 from flask import Flask, render_template as render, request
@@ -12,7 +13,7 @@ app: Flask = Flask(__name__)
 babel = Babel(app)
 
 
-class Config():
+class Config(object):
     """
     class `Config` for Flask app configuration
     """
@@ -27,7 +28,7 @@ app.config.from_object(Config)
 @babel.localeselector
 def get_locale() -> Union[str, None]:
     """
-    get_locale function 
+    get_locale method
     args:   None
     return: str | None
     """
