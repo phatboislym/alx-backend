@@ -18,7 +18,7 @@ def home() -> str:
     args:   None
     return: `Hello world`: str (as header (<h1>))
     """
-    return render('0-index.html', title='Welcome to Holberton', h1='Hello world')
+    return render('0-index.html')
 
 
 if __name__ == '__main__':
