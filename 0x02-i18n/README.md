@@ -1,0 +1,27 @@
+# 0x02. i18n
+
+# Mandatory Tasks
+
+- [0. Basic Flask app](0-app.py)
+  - [index.html](templates/0-index.html)
+- [1. Basic Babel setup](1-app.py)
+  - [index.html](templates/1-index.html)
+- [2. Get locale from request](2-app.py)
+  - [index.html](templates/2-index.html)
+- [3. Parametrize templates](3-app.py)
+  - [babel config](babel.cfg)
+  - [index.html](templates/3-index.html)
+  - [English](translations/en/LC_MESSAGES)
+    - [message catalogs](translations/en/LC_MESSAGES/messages.po)
+    - [compiled message catalogs](translations/en/LC_MESSAGES/messages.mo)
+  - [French](transalations/fr/LC_MESSAGES)
+    - [message catalogs](translations/fr/LC_MESSAGES/messages.po)
+    - [compiled message catalogs](translations/fr/LC_MESSAGES/messages.mo)
+- [4. Force locale with URL parameter](4-app.py)
+  - [index.html](templates/4-index.html)
+- [5. Mock logging in](5-app.py)
+  - [index.html](templates/5-index.html)
+- [6. Use user locale](6-app.py)
+  - [index.html](templates/6-index.html)
+- [7. Infer appropriate time zone](7-app.py)
+  - [index.html](templates/7-index.html)
