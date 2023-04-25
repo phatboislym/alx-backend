@@ -14,7 +14,7 @@
   - [English](translations/en/LC_MESSAGES)
     - [message catalogs](translations/en/LC_MESSAGES/messages.po)
     - [compiled message catalogs](translations/en/LC_MESSAGES/messages.mo)
-  - [French](transalations/fr/LC_MESSAGES)
+  - [French](translations/fr/LC_MESSAGES)
     - [message catalogs](translations/fr/LC_MESSAGES/messages.po)
     - [compiled message catalogs](translations/fr/LC_MESSAGES/messages.mo)
 - [4. Force locale with URL parameter](4-app.py)
