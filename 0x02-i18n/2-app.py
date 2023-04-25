@@ -7,7 +7,7 @@ contains a single / route
 
 from flask import Flask, render_template as render, request
 from flask_babel import Babel, gettext
-
+from typing import Union
 
 app: Flask = Flask(__name__)
 babel = Babel(app)
@@ -26,7 +26,12 @@ app.config.from_object(Config)
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> Union[str, None]:
+    """
+    get_locale method
+    args:   None
+    return: str | None
+    """
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
