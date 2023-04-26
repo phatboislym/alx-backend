@@ -8,7 +8,7 @@ module contains:
 """
 
 from flask import Flask, render_template as render, request
-from flask_babel import Babel, gettext
+from flask_babel import Babel
 from typing import Union
 
 app: Flask = Flask(__name__)
@@ -36,7 +36,8 @@ def get_locale() -> Union[str, None]:
     args:   None
     return: str | None
     """
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
+    # return request.accept_languages.best_match(app.config['LANGUAGES'])
+    return 'fr'
 
 
 @app.route('/')
@@ -47,9 +48,7 @@ def home() -> str:
     return: `home_title`: str (as title (<title>))
             `home_header`: str (as header (<h1>))
     """
-    title = gettext("home_title")
-    header = gettext("home_header")
-    return render('3-index.html', title=title, header=header)
+    return render('3-index.html')
 
 
 if __name__ == '__main__':
