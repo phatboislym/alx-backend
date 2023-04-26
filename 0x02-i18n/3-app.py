@@ -36,8 +36,10 @@ def get_locale() -> Union[str, None]:
     args:   None
     return: str | None
     """
-    # return request.accept_languages.best_match(app.config['LANGUAGES'])
-    return 'fr'
+    if (request.args['locale'] in app.config['LANGUAGES']):
+        return request.args['locale']
+    else:
+        return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/')
