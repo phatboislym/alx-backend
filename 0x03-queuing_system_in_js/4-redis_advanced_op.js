@@ -2,7 +2,6 @@
 // it logs a message to the console to indicate the connection status
 
 import redis from 'redis';
-import { promisify } from 'util';
 
 const redisClient = redis.createClient();
 
